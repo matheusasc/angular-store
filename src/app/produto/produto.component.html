@@ -1,0 +1,22 @@
+<div class="container container-produtos">
+  <h2>Cadastro de Item</h2>
+
+  <form>
+    <div class="form-group">
+      <label for="titulo">Título:</label>
+      <input type="text" class="form-control" id="titulo" [(ngModel)]="item.titulo" name="titulo" required>
+    </div>
+
+    <div class="form-group">
+      <label for="descricao">Descrição:</label>
+      <textarea class="form-control" id="descricao" [(ngModel)]="item.descricao" name="descricao" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="valor">Valor:</label>
+      <input type="number" class="form-control" id="valor" [(ngModel)]="item.valor" name="valor" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="cadastrarItem()">Cadastrar Item</button>
+  </form>
+</div>
